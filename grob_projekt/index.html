@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon_logo/g_black.svg"
+      type="image/svg"
+    />
+    <title>GROBEN</title>
+  </head>
+  <body>
+    <header>
+      <a id="logo" href="index.html"
+        ><img src="favicon_logo/groben_black.svg" alt="logo"
+      /></a>
+
+      <nav>
+        <ul class="burger_menu">
+          <li><a href="index.html">Groben</a></li>
+          <li><a href="error.html">Nyheder</a></li>
+          <li><a href="error.html">Ugens program</a></li>
+          <li><a href="error.html">Køb gavekort</a></li>
+          <li><a href="omos.html">Hvem er vi ?</a></li>
+          <li>
+            <a href="error.html"
+              ><img class="ikon" src="ikoner/cart.svg" alt="cart"
+            /></a>
+          </li>
+          <li>
+            <a href="error.html"
+              ><img class="ikon" src="ikoner/profil.svg" alt="profil"
+            /></a>
+          </li>
+        </ul>
+        <div id="hamburger">
+          <div id="burger_closed"></div>
+          <div id="burger_opened"></div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer>
+      <div>
+        <span>Addresse</span>
+        <span
+          >Teater Groben <br />
+          Nørrebrogade 37 <br />
+          2200 København N
+        </span>
+      </div>
+      <div>
+        <img src="favicon_logo/g_black.svg" alt="logo" />
+      </div>
+      <div>
+        <span>Kontakt</span>
+        <span>Tlf. : 35 30 05 00</span>
+        <span>Mandag - Onsdag : 17-20 (i spilleperioder)</span>
+        <span>Mail : billet@grob.dk</span>
+      </div>
+      <div class="so_me">
+        <a href="https://www.facebook.com/teatergrob"
+          ><img class="ikon" src="ikoner/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/teatergrob/"
+          ><img class="ikon" src="ikoner/insta.svg" alt="instagram"
+        /></a>
+        <a href="https://www.youtube.com/channel/UCFMJLMumnaC1Y0mURsmPJOw"
+          ><img class="ikon" src="ikoner/youtube.svg" alt="youtube"
+        /></a>
+        <a href="https://twitter.com/teatergrob"
+          ><img class="ikon" src="ikoner/twitter.svg" alt="twitter"
+        /></a>
+      </div>
+    </footer>
+    <script>
+      // constanter for alle mine burger menu elementer
+      const menu = document.querySelector(".burger_menu");
+      const menuItems = document.querySelectorAll("li");
+      const hamburger = document.querySelector("#hamburger");
+      const closeIcon = document.querySelector("#burger_opened");
+      const menuIcon = document.querySelector("#burger_closed");
+
+      // click event så jeg kan toggle mellem åben og lukket burger menu
+      hamburger.addEventListener("click", toggleMenu);
+
+      function toggleMenu() {
+        //  toggle mellem to "class" for enten at se hele menuen og knappen eller skjule menuen go se den anden knap
+        if (menu.classList.contains("showMenu")) {
+          menu.classList.remove("showMenu");
+          closeIcon.style.display = "none";
+          menuIcon.style.display = "block";
+        } else {
+          menu.classList.add("showMenu");
+          closeIcon.style.display = "block";
+          menuIcon.style.display = "none";
+        }
+      }
+
+      // giver hvert enkelt li i min menu en click event listener som sender til toggleMenu function
+      menuItems.forEach(function (li) {
+        li.addEventListener("click", toggleMenu);
+      });
+
+      window.addEventListener("DOMContentLoaded", start);
+
+      function start() {}
+    </script>
+  </body>
+</html>
