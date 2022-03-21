@@ -1,3 +1,12 @@
+:root {
+  --black: hsla(0, 0%, 0%, 1);
+  --xiketic: hsla(315, 30%, 8%, 1);
+  --dark-purple: hsla(313, 55%, 18%, 1);
+  --malachite: hsla(122, 83%, 49%, 1);
+  --persian-rose: hsla(323, 97%, 56%, 1);
+}
+
+
 @font-face {
   font-family: Squada;
   src: url(font/squadaone-regular-webfont.woff2);
@@ -14,6 +23,10 @@
   font-family: Squada;
 }
 
+ .groben {
+   color: var(--persian-rose);
+ }
+
 p,
 span,
 div,
@@ -29,7 +42,6 @@ img {
 
 h1 {
   font-size: 4rem;
-  /* ihwveabflpdksæ */
 }
 
 h2 {

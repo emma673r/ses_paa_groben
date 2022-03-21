@@ -1,3 +1,11 @@
+:root {
+  --black: hsla(0, 0%, 0%, 1);
+  --xiketic: hsla(315, 30%, 8%, 1);
+  --dark-purple: hsla(313, 55%, 18%, 1);
+  --malachite: hsla(122, 83%, 49%, 1);
+  --persian-rose: hsla(323, 97%, 56%, 1);
+}
+
 @font-face {
   font-family: Squada;
   src: url(font/squadaone-regular-webfont.woff2);
@@ -14,8 +22,48 @@
   font-family: Squada;
 }
 
-p, span, div, a, li {
-    font-family: Libre Baskerville;
+h1 {
+  font-size: 6.5rem;
+  position: fixed;
+  top: 5%;
+  left: 45%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+}
+
+p {
+  width: 40ch;
+  line-height: 170%;
+}
+
+a {
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--persian-rose);
+}
+
+.groben {
+  color: var(--persian-rose);
+}
+
+#konkurrence {
+  border-style: solid;
+  border-width: 7px;
+  border-color: var(--malachite);
+}
+
+p,
+span,
+div,
+a,
+li {
+  font-family: Libre Baskerville;
 }
 
 img {
@@ -149,5 +197,41 @@ footer {
 
   .so_me {
     display: flex;
+  }
+
+  #section_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #link {
+    grid-row: 2;
+  }
+
+  #section_2 figure {
+    display: flex;
+  }
+
+  #section_3 {
+    display: grid;
+    justify-content: center;
+  }
+
+  #arrow_left,
+  #arrow_right {
+    aspect-ratio: 740/415;
+    width: 80px;
+  }
+
+  #separator {
+    width: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #img_galleri {
+    border-style: solid;
+    border-width: 7px;
+    border-color: var(--persian-rose);
   }
 }
