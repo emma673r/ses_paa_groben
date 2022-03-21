@@ -10,16 +10,12 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
   font-family: Squada;
 }
 
-p,
-span,
-div,
-a,
-li {
-  font-family: Libre Baskerville;
+p, span, div, a, li {
+    font-family: Libre Baskerville;
 }
 
 img {
@@ -27,60 +23,131 @@ img {
   height: 100%;
 }
 
-h1 {
-  font-size: 4rem;
-  /* ihwveabflpdksæ */
+.ikon {
+  width: 40px;
+  display: flex;
+  justify-self: center;
 }
 
-h2 {
-  font-size: 2.5rem;
-  padding-left: 10px;
+#burger_closed {
+  background-image: url(ikoner/burger.svg);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  z-index: 50;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  padding-bottom: 20px;
+#burger_opened {
+  background-image: url(ikoner/krys.svg);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: none;
+  position: relative;
+  z-index: 50;
+}
+
+#hamburger {
+  position: fixed;
+  margin-top: 1%;
+  z-index: 50;
+  right: 0;
+  margin-right: 5px;
+}
+
+.burger_menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 50;
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  gap: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.burger_menu li {
+  display: flex;
+  justify-content: center;
+}
+
+.burger_menu a {
+  display: grid;
+  text-decoration: none;
+  font-size: 1rem;
+  align-content: center;
+}
+
+.showMenu {
+  transform: translateY(0%);
+}
+
+li {
+  background-color: inherit;
+}
+
+footer {
+  display: flex;
 }
 
 @media (min-width: 600px) {
-  #medlemmer {
+  #hamburger {
+    display: none;
+  }
+
+  .burger_menu {
+    transform: translateY(0);
+  }
+
+  .burger_menu a {
+    font-size: 1rem;
+  }
+
+  .burger_menu {
+    padding: 0;
+    position: inherit;
+    display: block;
+    transform: translateY(0%);
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  footer div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-rows: 1fr;
   }
 
   header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
   }
 
-  nav {
-    padding-top: 20px;
+  #logo {
+    width: 30%;
+    display: block;
   }
 
-  nav a {
-    padding-right: 40px;
+  footer img {
+    width: 50px;
   }
 
-  #kampagen_wrapper {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    justify-content: space-around;
+  .so_me {
+    display: flex;
   }
-
-  #kampagen_wrapper p {
-    width: 40ch;
-    line-height: 150%;
-  }
-
-  .doku_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 20px;
-  }
-
-  /* repeat(auto-fit, minmax(300px, 1fr)) */
 }

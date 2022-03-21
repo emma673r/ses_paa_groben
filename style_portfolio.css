@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Squada;
+  src: url(font/squadaone-regular-webfont.woff2);
+}
+
+@font-face {
+  font-family: Libre Baskerville;
+  src: url(font/librebaskerville-regular-webfont.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Squada;
+}
+
+p,
+span,
+div,
+a,
+li {
+  font-family: Libre Baskerville;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  /* ihwveabflpdksæ */
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  #medlemmer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  nav {
+    padding-top: 20px;
+  }
+
+  nav a {
+    padding-right: 40px;
+  }
+
+  #kampagen_wrapper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-around;
+  }
+
+  #kampagen_wrapper p {
+    width: 40ch;
+    line-height: 150%;
+  }
+
+  .doku_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+  }
+
+  /* repeat(auto-fit, minmax(300px, 1fr)) */
+}
