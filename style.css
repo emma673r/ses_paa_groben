@@ -234,4 +234,10 @@ footer {
     border-width: 7px;
     border-color: var(--persian-rose);
   }
+
+  .nyeste_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
