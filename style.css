@@ -158,11 +158,22 @@ h1 {
   border-color: var(--persian-rose);
 }
 
+#konkurrence {
+  padding: 15px;
+}
+
 #section_3 {
   display: grid;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+#konku_img {
+  margin-top: 20px;
+  border-style: dotted;
+  border-width: 3px;
+  border-color: var(--persian-rose);
 }
 
 .pic1 {
@@ -198,6 +209,10 @@ footer span {
 footer {
   margin-top: 20px;
   border-top: 5px solid hsla(122, 83%, 49%, 1);
+}
+
+ul {
+  list-style: none;
 }
 
 @media (min-width: 600px) {
