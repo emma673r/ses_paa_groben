@@ -6,7 +6,6 @@
   --persian-rose: hsla(323, 97%, 56%, 1);
 }
 
-
 @font-face {
   font-family: Squada;
   src: url(font/squadaone-regular-webfont.woff2);
@@ -23,9 +22,9 @@
   font-family: Squada;
 }
 
- .groben {
-   color: var(--persian-rose);
- }
+.groben {
+  color: var(--persian-rose);
+}
 
 p,
 span,
@@ -35,18 +34,15 @@ li {
   font-family: Libre Baskerville;
 }
 
+a {
+  color: var(--malachite);
+  font-family: squada one;
+  font-size: 1.5rem;
+}
+
 img {
   width: 100%;
   height: 100%;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  padding-left: 10px;
 }
 
 h1,
@@ -54,6 +50,27 @@ h2,
 h3,
 h4 {
   padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 0;
+}
+
+p {
+  padding-left: 10px;
+  max-width: 25ch;
+  padding-bottom: 10px;
+}
+
+article {
+  padding-bottom: 30px;
 }
 
 @media (min-width: 600px) {
@@ -93,6 +110,4 @@ h4 {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
   }
-
-  /* repeat(auto-fit, minmax(300px, 1fr)) */
 }
