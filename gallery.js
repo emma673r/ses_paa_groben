@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", start);
 
 function start() {
   img.classList.add("pic" + myNumber);
-  console.log(myNumber);
+
 
   arrowRight.addEventListener("click", clickNext);
   arrowLeft.addEventListener("click", clickPrevious);
@@ -17,14 +17,12 @@ function clickNext() {
   img.classList = "";
   img.classList.add("pic" + myNumber++);
 
-//   if (myNumber >= maxnumber+1) myNumber = minnumber;
+  if (myNumber >= 6) myNumber = 1;
 }
 
 function clickPrevious() {
-
   img.classList = "";
   img.classList.add("pic" + myNumber--);
 
-
-//   if (myNumber <= minnumber-1) myNumber = maxnumber;
+  if (myNumber <= 0) myNumber = 5;
 }

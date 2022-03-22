@@ -152,21 +152,8 @@ h1 {
   padding-right: 15px;
 }
 
-#img_galleri {
-  border-style: solid;
-  border-width: 7px;
-  border-color: var(--persian-rose);
-}
-
 #konkurrence {
   padding: 15px;
-}
-
-#section_3 {
-  display: grid;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 #konku_img {
@@ -174,6 +161,30 @@ h1 {
   border-style: dotted;
   border-width: 3px;
   border-color: var(--persian-rose);
+}
+
+#section_2 {
+  padding-bottom: 40px;
+}
+
+#section_3 {
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+
+#arrow_system {
+  padding-top: 30px;
+  display: flex;
+  place-content: center;
+}
+
+#img_galleri {
+  border-style: solid;
+  border-width: 7px;
+  border-color: var(--persian-rose);
+  width: 95%;
+  height: 180px;
 }
 
 .pic1 {
@@ -184,6 +195,29 @@ h1 {
 }
 
 .pic2 {
+  background-image: url(pics/kampagne/pic2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pic3 {
+  background-image: url(pics/kampagne/pic3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pic4 {
+  background-image: url(pics/kampagne/pic4.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pic5 {
+  background-image: url(pics/kampagne/pic5.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 footer img {
@@ -277,6 +311,13 @@ ul {
 
   #section_2 figure {
     display: flex;
+  }
+
+  #section_3 {
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   #arrow_left,
