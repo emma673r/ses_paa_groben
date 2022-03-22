@@ -110,4 +110,38 @@ article {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
   }
+
+  .galleri {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1px;
+    align-items: start;
+    justify-items: center;
+    margin: auto;
+    width: 800px;
+    background-color: var(--persian-rose);
+  }
+
+  .galleri img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .galleri img:nth-child(4) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  .galleri img:nth-child(11) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  #videoer img {
+    width: 400px;
+  }
+
+  #videoer section {
+    display: flex;
+  }
 }
