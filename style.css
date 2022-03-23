@@ -249,6 +249,14 @@ ul {
   list-style: none;
 }
 
+iframe {
+  border-style: double;
+  border-width: 5px;
+  border-color: var(--persian-rose);
+  width: auto;
+  height: auto;
+}
+
 @media (min-width: 600px) {
   #hamburger {
     display: none;
@@ -296,6 +304,7 @@ ul {
     position: fixed;
     top: 15%;
     left: 45%;
+    z-index: 100;
   }
 
   #section_1 {
@@ -394,5 +403,13 @@ ul {
     display: grid;
     place-items: center;
     background-color: var(--malachite);
+  }
+
+  iframe {
+    border-width: 20px;
+    position: relative;
+    top: -22%;
+    width: 784px;
+    height: 441px;
   }
 }
